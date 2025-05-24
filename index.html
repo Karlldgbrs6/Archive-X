@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Archive-X</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loader"></div>
+
+    <header>
+        <h1>Archive-X</h1>
+        <nav class="auth-menu">
+            <a href="#" onclick="showLogin()">Connexion</a>
+            <a href="#" onclick="showRegister()">Inscription</a>
+        </nav>
+    </header>
+
+    <div class="nav-tabs">
+        <button class="tab" onclick="showTab('links')">Liens</button>
+        <button class="tab" onclick="showTab('images')">Images</button>
+        <button class="tab" onclick="showTab('files')">Fichiers</button>
+        <button class="tab" onclick="showTab('others')">Autres</button>
+        <div class="tab-indicator"></div>
+    </div>
+
+    <div id="links" class="tab-content active">
+        <button class="add-button" onclick="addItem('links')">+</button>
+        <p><strong>Liens:</strong> <span id="count-links">0</span></p>
+        <div class="content-list" id="list-links"></div>
+    </div>
+
+    <div id="images" class="tab-content">
+        <button class="add-button" onclick="addItem('images')">+</button>
+        <p><strong>Images:</strong> <span id="count-images">0</span></p>
+        <div class="content-list" id="list-images"></div>
+    </div>
+
+    <div id="files" class="tab-content">
+        <button class="add-button" onclick="addItem('files')">+</button>
+        <p><strong>Fichiers:</strong> <span id="count-files">0</span></p>
+        <div class="content-list" id="list-files"></div>
+    </div>
+
+    <div id="others" class="tab-content">
+        <button class="add-button" onclick="addItem('others')">+</button>
+        <p><strong>Autres:</strong> <span id="count-others">0</span></p>
+        <div class="content-list" id="list-others"></div>
+    </div>
+
+    <footer class="footer">
+        @2025 Luberisse Karl Brad - Tous droits réservés. Contactez-nous : karlluberisse1308@gmail.com | happybadly@gamail.com | +33 758-020-294
+        <p class="description">Archive-X – Votre espace sécurisé pour stocker et organiser vos images et liens web. Un site intuitif et performant, conçu pour faciliter l'accès à vos contenus tout en assurant leur protection. Que ce soit pour sauvegarder des documents importants ou découvrir de nouvelles ressources, Archive-X est votre refuge numérique.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
